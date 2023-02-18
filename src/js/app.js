@@ -34,12 +34,12 @@ function render(variables = {}) {
     <div class="widget">
         ${cover}
       <img src="${variables.avatarURL}" class="photo" />
-      <h1>${variables.name === null ? "Laura" : variables.name} ${
-    variables.lastname === null ? "Osaka" : variables.lastname
+      <h1>${variables.name === null ? "Name" : variables.name} ${
+    variables.lastname === null ? "" : variables.lastname
   }</h1>
-      <h2>${variables.role === null ? "Developer" : variables.role}</h2>
-      <h3>${variables.city === null ? "Tokyo" : variables.city}, ${
-    variables.country === null ? "JP" : variables.country
+      <h2>${variables.role === null ? "Role" : variables.role}</h2>
+      <h3>${variables.city === null ? "City" : variables.city}, ${
+    variables.country === null ? "Country" : variables.country
   }</h3>
       <ul class="${
         variables.socialMediaPosition === "position-left"
@@ -62,6 +62,22 @@ function render(variables = {}) {
     </div>
   `;
 }
+
+// const onMouseUp = e => {
+//   if (e) {
+//     const githubIcon = document.querySelector(".fa-github");
+//     githubIcon.className = "anything";
+//   }
+// };
+
+// const github = document.querySelector(".github");
+
+// if (document.activeElement === github) {
+//   const githubIcon = document.querySelector(".fa-github");
+//   githubIcon.className = "anythiiiiiiiiiing";
+// }
+
+// github.addEventListener("mouseup", onMouseUp);
 
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
