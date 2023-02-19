@@ -63,22 +63,6 @@ function render(variables = {}) {
   `;
 }
 
-// const onMouseUp = e => {
-//   if (e) {
-//     const githubIcon = document.querySelector(".fa-github");
-//     githubIcon.className = "anything";
-//   }
-// };
-
-// const github = document.querySelector(".github");
-
-// if (document.activeElement === github) {
-//   const githubIcon = document.querySelector(".fa-github");
-//   githubIcon.className = "anythiiiiiiiiiing";
-// }
-
-// github.addEventListener("mouseup", onMouseUp);
-
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
